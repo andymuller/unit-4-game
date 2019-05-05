@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    <meta charset="UTF-8">
+    <title>Pokeballs</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    </head>
+<body>
+    <h1>Pokeball Collector!</h1>
+    <div id="instructions">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four Pokeballs below. By clicking on a ball, you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the number displayed above the balls. You lose if your total score goes above the random number.</p>
+        <p>The value of each Pokeball is hidden from you until you click on it.</p>
+        <p>Each time the game starts, the game will change the values of each Pokeball.</p>
+    </div>
+    <div id="target-score"></div>
+    <div>
+        <p>Wins: <span id="total-wins"></span></p>
+        <p>Losses: <span id="total-losses"></span></p>
+    </div>
+    <div>
+        <img class="ball-button" id="button-pokeball" src="assets/images/pokeball.png">
+        <img class="ball-button" id="button-greatball" src="assets/images/greatball.png">
+        <img class="ball-button" id="button-ultraball" src="assets/images/ultraball.png">
+        <img class="ball-button" id="button-masterball" src="assets/images/masterball.png">
+    </div>
+    <div>
+        <p>Your total score is:</p>
+    </div>
+    <div>
+        <h2 id="current-score"></h2>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
